@@ -1,3 +1,5 @@
+# Author: dhtfish98
+# Copyright (c) 2026 dhtfish98
 import unittest
 from unit_sandbox_audit import analyze
 from unit_sandbox_audit.engine import BOOLEAN

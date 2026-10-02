@@ -1,20 +1,13 @@
 {
   "name": "UnitSandboxAudit",
-  "group": "host",
+  "version": "0.1.2",
   "status": "PASS",
-  "version": "0.1.1",
   "test_count": 19,
-  "source_code_sha256": "e0bd32ceb7e58b8aeaf348cd960661f7bdc43b76dfb5284063d1117170b739af",
-  "wheel_sha256": "408dc0b1ef013728f6057757e410b1fe13fcad82234307f81a9cfe55c2b6da38",
-  "source_wheel_installed_bytes": "PASS",
-  "licenses": "PASS",
-  "dependency_check": "PASS",
-  "verified_utc": "2026-10-02T11:19:58.021100+00:00",
-  "wheel": "unit_sandbox_audit-0.1.1-py3-none-any.whl",
-  "verification": "Fresh per-project environment; wheel/source/installed runtime byte comparison; complete installed unittest suite; pip dependency check; license byte checks",
-  "runtime_platform": "Python 3.14 macOS arm64; remote Linux CI recorded separately",
+  "wheel_sha256": "06fc0c798cd58f8f6b071e867f32f3ce2fa39b0f76f223f14d3deeef9687874a",
+  "author": "dhtfish98",
+  "wheel": "unit_sandbox_audit-0.1.2-py3-none-any.whl",
+  "verification": "Rebuilt wheel, separate installed tests, package author metadata, runtime and retained third-party notice byte verification",
+  "record_kind": "Attribution patch verification",
   "application_qualification": "OPEN",
-  "whole_upstream_equivalence": "OPEN",
-  "effective_deployed_protection": "OPEN",
-  "record_kind": "Current repaired release verification"
+  "whole_upstream_equivalence": "OPEN"
 }

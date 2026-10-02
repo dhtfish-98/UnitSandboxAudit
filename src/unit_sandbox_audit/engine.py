@@ -1,3 +1,5 @@
+# Author: dhtfish98
+# Copyright (c) 2026 dhtfish98
 """Audit one service's ordered, supplied unit fragments and sandbox declarations."""
 import re
 import shlex

@@ -1,5 +1,9 @@
 # UnitSandboxAudit
 
+Version **0.1.2**.
+
+New implementation author: **dhtfish98**. Copyright (c) 2026 dhtfish98 applies to the new implementation code. Upstream policy data, original notices and source references retain their original attribution.
+
 Systemd service sandbox configuration audit. Complete independent **new scope**, not the whole upstream system rewritten.
 
 Input: `{"fragments":[{"name":"app.service","text":"[Service]\n..."},{"name":"10.conf","text":"[Service]\n..."}]}`. Caller supplies the authoritative selected fragment order. Scalar declarations override; supported lists append and empty lists reset. Complete new scope checks ten sandbox switches, declared User/DynamicUser values, ProtectSystem/Home, capabilities, address families, private UMask, execution privilege prefixes and broad writable root paths. Missing declarations, unsupported directives, list inversions/specifiers, syscall group filters, symbolic masks and implicit identities are OPEN. This does not resolve systemd's unit search paths or score a service's effective runtime security.
