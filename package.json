@@ -1,0 +1,7 @@
+{
+  "distribution": "unit-sandbox-audit",
+  "package": "unit_sandbox_audit",
+  "command": "unit-sandbox-audit",
+  "license": "MIT",
+  "description": "Systemd service sandbox configuration audit"
+}

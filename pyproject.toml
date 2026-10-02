@@ -1,0 +1,14 @@
+[build-system]
+requires = []
+build-backend = "backend"
+backend-path = ["."]
+
+[project]
+name = "unit-sandbox-audit"
+version = "0.1.0"
+requires-python = ">=3.10"
+description = "Systemd service sandbox configuration audit"
+license = {text = "MIT"}
+
+[project.scripts]
+unit-sandbox-audit = "unit_sandbox_audit.cli:main"

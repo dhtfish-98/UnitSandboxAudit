@@ -1,0 +1,8 @@
+{
+  "fragments": [
+    {
+      "name": "app.service",
+      "text": "[Service]\nNoNewPrivileges=yes\nPrivateTmp=yes\nPrivateDevices=yes\nProtectKernelTunables=yes\nProtectKernelModules=yes\nProtectKernelLogs=yes\nProtectControlGroups=yes\nRestrictSUIDSGID=yes\nLockPersonality=yes\nMemoryDenyWriteExecute=yes\nUser=service-account\nProtectSystem=strict\nProtectHome=yes\nCapabilityBoundingSet=\nAmbientCapabilities=\nRestrictAddressFamilies=AF_UNIX AF_INET AF_INET6\nUMask=0077\nExecStart=/usr/sbin/helper"
+    }
+  ]
+}

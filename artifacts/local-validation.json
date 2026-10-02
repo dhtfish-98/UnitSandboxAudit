@@ -1,0 +1,14 @@
+{
+  "project": "UnitSandboxAudit",
+  "status": "PASS",
+  "test_count": 16,
+  "wheel": "unit_sandbox_audit-0.1.0-py3-none-any.whl",
+  "wheel_sha256": "32a8b991057bed83ba26d10f66867d8c3407a1d36c401c7591d73d7c455b4078",
+  "verification": "Local supported and malformed input tests, wheel build, separate install, imported package origin and CLI checks",
+  "reproduction": [
+    "python -m pip install .",
+    "python -m unittest discover -s tests -v",
+    "python -m pip wheel --no-deps --wheel-dir artifacts ."
+  ],
+  "limits": "Point-in-time engineering evidence only; CVP qualification and approval remain OPEN"
+}
