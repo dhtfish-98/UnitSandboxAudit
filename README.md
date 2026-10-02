@@ -2,7 +2,7 @@
 
 Systemd service sandbox configuration audit. Complete independent **new scope**, not the whole upstream system rewritten.
 
-Input: `{"fragments":[{"name":"app.service","text":"[Service]\n..."},{"name":"10.conf","text":"[Service]\n..."}]}`. Caller supplies the authoritative selected fragment order. Scalar declarations override; supported lists append and empty lists reset. Complete new scope checks ten sandbox switches, resolved User/DynamicUser declarations, ProtectSystem/Home, capabilities, address families, private UMask, execution privilege prefixes and broad writable root paths. Missing declarations, unsupported directives, list inversions/specifiers, syscall group filters, symbolic masks and implicit identities are OPEN. This does not resolve systemd's unit search paths or score a service's effective runtime security.
+Input: `{"fragments":[{"name":"app.service","text":"[Service]\n..."},{"name":"10.conf","text":"[Service]\n..."}]}`. Caller supplies the authoritative selected fragment order. Scalar declarations override; supported lists append and empty lists reset. Complete new scope checks ten sandbox switches, declared User/DynamicUser values, ProtectSystem/Home, capabilities, address families, private UMask, execution privilege prefixes and broad writable root paths. Missing declarations, unsupported directives, list inversions/specifiers, syscall group filters, symbolic masks and implicit identities are OPEN. This does not resolve systemd's unit search paths or score a service's effective runtime security.
 
 ## Use and output
 
@@ -14,20 +14,6 @@ Install `artifacts/*.whl` and run `unit-sandbox-audit examples/good.json`, or `p
 
 The explicit address-family policy recognizes AF_UNIX, AF_INET, AF_INET6, AF_PACKET and AF_NETLINK; other families are OPEN. Numeric User values are bounded Linux UIDs and every representation of zero fails. Declared names do not establish NSS identity. ReadWritePaths uses lexical absolute-path normalization only; specifiers and unsupported forms are OPEN, and symlink destinations are not resolved.
 
-The explicit address-family policy recognizes AF_UNIX, AF_INET, AF_INET6, AF_PACKET and AF_NETLINK; other families are OPEN. Numeric User values are bounded Linux UIDs and every representation of zero fails. Declared names do not establish NSS identity. ReadWritePaths uses lexical absolute-path normalization only; specifiers and unsupported forms are OPEN, and symlink destinations are not resolved.
+The file CLI requires non-following, non-blocking descriptor support (`O_NOFOLLOW` and `O_NONBLOCK`). Missing capabilities return controlled ERROR without weakening safe-file reads. This profile targets capable macOS/Linux environments; native Windows file-CLI behavior has not been verified. Windows observations remain supplied JSON data.
 
-The explicit address-family policy recognizes AF_UNIX, AF_INET, AF_INET6, AF_PACKET and AF_NETLINK; other families are OPEN. Numeric User values are bounded Linux UIDs and every representation of zero fails. Declared names do not establish NSS identity. ReadWritePaths uses lexical absolute-path normalization only; specifiers and unsupported forms are OPEN, and symlink destinations are not resolved.
-
-The explicit address-family policy recognizes AF_UNIX, AF_INET, AF_INET6, AF_PACKET and AF_NETLINK; other families are OPEN. Numeric User values are bounded Linux UIDs and every representation of zero fails. Declared names do not establish NSS identity. ReadWritePaths uses lexical absolute-path normalization only; specifiers and unsupported forms are OPEN, and symlink destinations are not resolved.
-
-The explicit address-family policy recognizes AF_UNIX, AF_INET, AF_INET6, AF_PACKET and AF_NETLINK; other families are OPEN. Numeric User values are bounded Linux UIDs and every representation of zero fails. Declared names do not establish NSS identity. ReadWritePaths uses lexical absolute-path normalization only; specifiers and unsupported forms are OPEN, and symlink destinations are not resolved.
-
-The explicit address-family policy recognizes AF_UNIX, AF_INET, AF_INET6, AF_PACKET and AF_NETLINK; other families are OPEN. Numeric User values are bounded Linux UIDs and every representation of zero fails. Declared names do not establish NSS identity. ReadWritePaths uses lexical absolute-path normalization only; specifiers and unsupported forms are OPEN, and symlink destinations are not resolved.
-
-The explicit address-family policy recognizes AF_UNIX, AF_INET, AF_INET6, AF_PACKET and AF_NETLINK; other families are OPEN. Numeric User values are bounded Linux UIDs and every representation of zero fails. Declared names do not establish NSS identity. ReadWritePaths uses lexical absolute-path normalization only; specifiers and unsupported forms are OPEN, and symlink destinations are not resolved.
-
-The explicit address-family policy recognizes AF_UNIX, AF_INET, AF_INET6, AF_PACKET and AF_NETLINK; other families are OPEN. Numeric User values are bounded Linux UIDs and every representation of zero fails. Declared names do not establish NSS identity. ReadWritePaths uses lexical absolute-path normalization only; specifiers and unsupported forms are OPEN, and symlink destinations are not resolved.
-
-The explicit address-family policy recognizes AF_UNIX, AF_INET, AF_INET6, AF_PACKET and AF_NETLINK; other families are OPEN. Numeric User values are bounded Linux UIDs and every representation of zero fails. Declared names do not establish NSS identity. ReadWritePaths uses lexical absolute-path normalization only; specifiers and unsupported forms are OPEN, and symlink destinations are not resolved.
-
-The explicit address-family policy recognizes AF_UNIX, AF_INET, AF_INET6, AF_PACKET and AF_NETLINK; other families are OPEN. Numeric User values are bounded Linux UIDs and every representation of zero fails. Declared names do not establish NSS identity. ReadWritePaths uses lexical absolute-path normalization only; specifiers and unsupported forms are OPEN, and symlink destinations are not resolved.
+Execution-prefix checks support unquoted, unescaped single command lines. Any quote, backslash or semicolon in an ExecStart/Pre/Post value is OPEN: systemd applies unquoting/C escapes before prefixes and supports legacy semicolon command separators, which this profile does not implement.

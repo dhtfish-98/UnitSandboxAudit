@@ -94,6 +94,12 @@ def analyze(snapshot):
     if not values.get('ExecStart'):report.add('execution','OPEN','ExecStart','No start command in supplied fragments')
     for key in ('ExecStart','ExecStartPre','ExecStartPost'):
         for value in values.get(key,[]):
+            # systemd extracts/unquotes/C-unescapes the first word before applying
+            # privilege prefixes, and supports legacy ';' command separators.
+            # This profile deliberately declines that unimplemented lexical scope.
+            if any(c in value for c in ('\\', '"', "'", ';')):
+                report.add('exec_syntax','OPEN',origins[key],'Quoted/escaped/semicolon command syntax is outside the selected lexical profile')
+                continue
             prefix=re.match(r'^[-@:+!|]*',value)[0]
             report.check('exec_privileges','+' not in prefix and '!' not in prefix,origins[key],'Privilege-changing command prefix')
     if 'UMask' in values:

@@ -5,7 +5,7 @@ backend-path = ["."]
 
 [project]
 name = "unit-sandbox-audit"
-version = "0.1.0"
+version = "0.1.1"
 requires-python = ">=3.10"
 description = "Systemd service sandbox configuration audit"
 license = {text = "MIT"}
