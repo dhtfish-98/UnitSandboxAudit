@@ -1,0 +1,170 @@
+{
+  "name": "UnitSandboxAudit",
+  "version": "0.1.3",
+  "implementation_author": "dhtfish98",
+  "base_public_commit": "32a5c7eb3eb9e3a40e41034d3ff00d6d729072dd",
+  "current_verification": "PUBLIC_AUDIT_FIX_20261003.json",
+  "source_tree_sha256": "c35dbaf0f1d3b92dc41d0423992175f80113b236f0491208338dde916cfaee8d",
+  "digest_contract": "SHA256 of canonical sorted-key compact JSON source_files; excludes generated provenance/current report, this self-manifest and artifacts. Complete final project list retained by reviewer.",
+  "source_files": [
+    {
+      "path": ".github/workflows/verify.yml",
+      "sha256": "62c55001ff00e700cea9d8a5103659710ceb6d8a998c69c7b0cc77a7863bd88d",
+      "bytes": 761
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "8b188bf4462b2ef7a06ba861792cdda7b0ceaa66fbd055e5c5b29be71406a769",
+      "bytes": 79
+    },
+    {
+      "path": "ATTRIBUTION_UPDATE_20261002.json",
+      "sha256": "37c27f6b2a028a7e171e982f3b78d81bbd8e4f726d2ff20c990c1d55208cd2b0",
+      "bytes": 537
+    },
+    {
+      "path": "COPYRIGHT.md",
+      "sha256": "0989a74acaf06c56e82a734d27342f0bdf47258b708e88f57de464d95c094502",
+      "bytes": 435
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "de926d6c22d9e061af6158b0f23146ce036bfb2a562f2f406acec2dc4bd8b298",
+      "bytes": 1066
+    },
+    {
+      "path": "ORIGIN.md",
+      "sha256": "ca17cf0e5a16b41cc7b56bf56c694d6651dfa31c9061763a7cbfc32466099287",
+      "bytes": 2586
+    },
+    {
+      "path": "README.md",
+      "sha256": "84b3838b2d1c8bef4e3a6b81da749dd1a9605b6f402ef99383b187bf2ad21fb3",
+      "bytes": 3503
+    },
+    {
+      "path": "REAUDIT_20261002.json",
+      "sha256": "b22bf8847d6fb8639464923c43c49748fa25022d613e81229a49af6b6afd2bb9",
+      "bytes": 939
+    },
+    {
+      "path": "VALIDATION.md",
+      "sha256": "456401adea73679afdb7b226fa64a830bd62c84cbb64b25ec70843caeffce4b3",
+      "bytes": 3503
+    },
+    {
+      "path": "backend.py",
+      "sha256": "9b0305381627c944e2f98442ffb8b58fbd6bd72623aa374b79036c3ac955443c",
+      "bytes": 2074
+    },
+    {
+      "path": "examples/expectations.json",
+      "sha256": "dc0af460d1852bac73542bb9b1eba87a91a32f020056793fe2765bff2437653e",
+      "bytes": 87
+    },
+    {
+      "path": "examples/good.json",
+      "sha256": "243d2d6ba214ae2261745368affbbdd085747b4c07086e934abce32e9a7fdd5c",
+      "bytes": 519
+    },
+    {
+      "path": "examples/incomplete.json",
+      "sha256": "29847221531a0aced5c461ed49680a1585ed4c4a317a21e44bafb6066403bcfd",
+      "bytes": 22
+    },
+    {
+      "path": "examples/malformed.json",
+      "sha256": "49382494aec4dbd8ec8b408c6b1bdbde4086a41025160338ab810814d639370c",
+      "bytes": 22
+    },
+    {
+      "path": "examples/risky.json",
+      "sha256": "832a99c560be8a98d7173e1d426f5ad0aaca938d49357981adec5d705250bc0a",
+      "bytes": 539
+    },
+    {
+      "path": "package.json",
+      "sha256": "cf631429709625913fadb4c5422f5b8dd1b50c1fa719de93f01060b9c519d6de",
+      "bytes": 244
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "9df1fdb7bf5fc88b067a76bdc2a2286e0e799d90a2b7c53e6f0c9118d14db145",
+      "bytes": 348
+    },
+    {
+      "path": "src/unit_sandbox_audit/__init__.py",
+      "sha256": "44d33cab616d4cdba9d30e0be567077306fa17ac3bdb6a9bba27303dfc5e0b2e",
+      "bytes": 126
+    },
+    {
+      "path": "src/unit_sandbox_audit/__main__.py",
+      "sha256": "b2f10addb56fec7227aabc8b2c1ee939339c7c59e51a53d6bd76b4201b0c5c2d",
+      "bytes": 98
+    },
+    {
+      "path": "src/unit_sandbox_audit/cli.py",
+      "sha256": "31e7dfa346fc81f5a32945339f922408c9e233093bde986f4b1f9aa53c96790a",
+      "bytes": 197
+    },
+    {
+      "path": "src/unit_sandbox_audit/common.py",
+      "sha256": "a67c5ca00d41ddba1fd15a406bff7d38079969126d9df818742949e63c347a50",
+      "bytes": 5288
+    },
+    {
+      "path": "src/unit_sandbox_audit/engine.py",
+      "sha256": "e5d3134c0433774ffe2bcce757f75a76f3b5f8ef111a996b3ba8d01737ecf1a9",
+      "bytes": 9537
+    },
+    {
+      "path": "tests/test_engine.py",
+      "sha256": "b2466f683e6bc0204c93750ec0487e9be94f2b15c9857c3a025ee235891f7209",
+      "bytes": 3165
+    },
+    {
+      "path": "tests/test_input_contract.py",
+      "sha256": "a83230db90cfd2f10e7906fce81e48f1aab3cb3b326d039fd60ca7c9be6c64e3",
+      "bytes": 1661
+    },
+    {
+      "path": "tests/test_reaudit.py",
+      "sha256": "b5ec4f6888580e6cca7114ae6da2f54c1a64992c0333aa60d4dcb514924933d9",
+      "bytes": 1630
+    },
+    {
+      "path": "tests/test_writable_path_lexical_boundary.py",
+      "sha256": "96651d807d8463bb09ca724ae87f61473a38567cf54ce584f6d5b7866b132beb",
+      "bytes": 2733
+    }
+  ],
+  "new_runtime_files": [
+    {
+      "path": "src/unit_sandbox_audit/__init__.py",
+      "sha256": "44d33cab616d4cdba9d30e0be567077306fa17ac3bdb6a9bba27303dfc5e0b2e",
+      "bytes": 126
+    },
+    {
+      "path": "src/unit_sandbox_audit/__main__.py",
+      "sha256": "b2f10addb56fec7227aabc8b2c1ee939339c7c59e51a53d6bd76b4201b0c5c2d",
+      "bytes": 98
+    },
+    {
+      "path": "src/unit_sandbox_audit/cli.py",
+      "sha256": "31e7dfa346fc81f5a32945339f922408c9e233093bde986f4b1f9aa53c96790a",
+      "bytes": 197
+    },
+    {
+      "path": "src/unit_sandbox_audit/common.py",
+      "sha256": "a67c5ca00d41ddba1fd15a406bff7d38079969126d9df818742949e63c347a50",
+      "bytes": 5288
+    },
+    {
+      "path": "src/unit_sandbox_audit/engine.py",
+      "sha256": "e5d3134c0433774ffe2bcce757f75a76f3b5f8ef111a996b3ba8d01737ecf1a9",
+      "bytes": 9537
+    }
+  ],
+  "upstream_source": "See unchanged frozen source references plus correction boundary in ORIGIN.md",
+  "whole_upstream_equivalence": "OPEN"
+}

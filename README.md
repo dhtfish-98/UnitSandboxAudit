@@ -1,6 +1,6 @@
 # UnitSandboxAudit
 
-Version **0.1.2**.
+Version **0.1.3**.
 
 New implementation author: **dhtfish98**. Copyright (c) 2026 dhtfish98 applies to the new implementation code. Upstream policy data, original notices and source references retain their original attribution.
 
@@ -21,3 +21,5 @@ The explicit address-family policy recognizes AF_UNIX, AF_INET, AF_INET6, AF_PAC
 The file CLI requires non-following, non-blocking descriptor support (`O_NOFOLLOW` and `O_NONBLOCK`). Missing capabilities return controlled ERROR without weakening safe-file reads. This profile targets capable macOS/Linux environments; native Windows file-CLI behavior has not been verified. Windows observations remain supplied JSON data.
 
 Execution-prefix checks support unquoted, unescaped single command lines. Any quote, backslash or semicolon in an ExecStart/Pre/Post value is OPEN: systemd applies unquoting/C escapes before prefixes and supports legacy semicolon command separators, which this profile does not implement.
+
+ReadWritePaths assignments containing single quotes, double quotes or backslashes remain OPEN before list tokenization. The selected plain unquoted absolute-path profile still normalizes `/../` to `/` and rejects broad writable roots. This conservative boundary avoids applying POSIX shlex semantics to systemd's distinct EXTRACT_UNQUOTE rules; it does not implement the full systemd interpreter.

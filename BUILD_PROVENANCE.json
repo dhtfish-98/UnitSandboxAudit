@@ -1,10 +1,10 @@
 {
   "batch": "additional-defensive-projects-b-20261002",
   "author": "dhtfish98",
-  "reviewed_source_tree_sha256": "0d78b899daf693218dc698d4b558b313d70f4e48b4a01959f9d6860c4d4ebf86",
-  "verified_wheel_sha256": "06fc0c798cd58f8f6b071e867f32f3ce2fa39b0f76f223f14d3deeef9687874a",
-  "version": "0.1.2",
-  "previous_publication_commit": "3467924ff66f50eea5e03f4d5bfc234aaac0f3a2",
+  "reviewed_source_tree_sha256": "c35dbaf0f1d3b92dc41d0423992175f80113b236f0491208338dde916cfaee8d",
+  "verified_wheel_sha256": "d4197e663ebdf9ce56ec17f407472a338b364ce7bce6b93d8287b45b37620651",
+  "version": "0.1.3",
+  "previous_publication_commit": "32a5c7eb3eb9e3a40e41034d3ff00d6d729072dd",
   "publication_transforms": [
     "Markdown trailing whitespace normalized",
     "One pinned CI workflow",
@@ -12,6 +12,8 @@
   ],
   "implementation": "Independent implementation of the documented local defensive scope",
   "source_attribution": "See ORIGIN.md and retained license notices",
-  "current_verification": "ATTRIBUTION_UPDATE_20261002.json",
-  "application_qualification": "OPEN; no CVP approval claim"
+  "current_verification": "PUBLIC_AUDIT_FIX_20261003.json",
+  "application_qualification": "OPEN; no CVP approval claim",
+  "source_manifest": "SOURCE_MANIFEST.json",
+  "publication_status": "Prepared locally; not published or CI-verified yet"
 }

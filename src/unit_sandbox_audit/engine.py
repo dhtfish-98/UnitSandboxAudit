@@ -44,6 +44,10 @@ def analyze(snapshot):
             origins[key]=where
             if key in LISTS:
                 if not value:values[key]=[]
+                elif key=='ReadWritePaths' and any(c in value for c in ('\\', '"', "'")):
+                    # POSIX shlex quote/escape semantics differ from systemd
+                    # EXTRACT_UNQUOTE. Do not infer a safe normalized path.
+                    report.add('writable_path_syntax','OPEN',where,'Quoted/escaped writable paths are outside the selected lexical profile')
                 else:
                     try:tokens=shlex.split(value)
                     except ValueError as exc:raise InputError(str(exc)) from exc
