@@ -1,0 +1,35 @@
+{
+  "schema": "project-build-layout.v1",
+  "project": "UnitSandboxAudit",
+  "author": "dhtfish98",
+  "kind": "python-wheel",
+  "base_public_commit": "b84da7b82ae14cec6e63ba039514ea8e4a9224f2",
+  "restored_inputs": [
+    {
+      "original": "COPYRIGHT.md",
+      "stored": "项目文档/COPYRIGHT.md",
+      "sha256": "0989a74acaf06c56e82a734d27342f0bdf47258b708e88f57de464d95c094502"
+    },
+    {
+      "original": "LICENSE",
+      "stored": "项目文档/LICENSE",
+      "sha256": "de926d6c22d9e061af6158b0f23146ce036bfb2a562f2f406acec2dc4bd8b298"
+    },
+    {
+      "original": "ORIGIN.md",
+      "stored": "项目文档/ORIGIN.md",
+      "sha256": "ca17cf0e5a16b41cc7b56bf56c694d6651dfa31c9061763a7cbfc32466099287"
+    },
+    {
+      "original": "README.md",
+      "stored": "项目文档/README.md",
+      "sha256": "0d3bff4485711de194f2cf2d463471f7933e1ac877e386c2db1cc6e45d7bd1b0"
+    },
+    {
+      "original": "VALIDATION.md",
+      "stored": "项目文档/VALIDATION.md",
+      "sha256": "456401adea73679afdb7b226fa64a830bd62c84cbb64b25ec70843caeffce4b3"
+    }
+  ],
+  "platform_entries": []
+}
