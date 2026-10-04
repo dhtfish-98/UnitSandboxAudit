@@ -4,7 +4,7 @@
   "implementation_author": "dhtfish98",
   "base_public_commit": "32a5c7eb3eb9e3a40e41034d3ff00d6d729072dd",
   "current_verification": "PUBLIC_AUDIT_FIX_20261003.json",
-  "source_tree_sha256": "df399527d2aef00e88ecd7065f5e8bca7866aff27994896ab52b4b1a428910ad",
+  "source_tree_sha256": "3d02736a403f23843b0fa2dfc4cb998ef877826156d5cdd4326d17ce376708b8",
   "digest_contract": "SHA256 of UTF-8 ensure_ascii=False sorted-key compact JSON source_files; self inventory and generated Build outputs excluded. Directory maintenance only, not a new safety semantic test.",
   "source_files": [
     {
@@ -14,23 +14,13 @@
     },
     {
       "path": ".gitignore",
-      "sha256": "0ccb9a04b7227999010a8f666529fe9e87d5218929ea76d953813fa69f815ede",
-      "bytes": 193
-    },
-    {
-      "path": "ATTRIBUTION_UPDATE_20261002.json",
-      "sha256": "37c27f6b2a028a7e171e982f3b78d81bbd8e4f726d2ff20c990c1d55208cd2b0",
-      "bytes": 537
+      "sha256": "d40ed45e1b2bc764c2b18d150d5cf9746d6d53aa1473a28a74cc9ab2a3e1168b",
+      "bytes": 210
     },
     {
       "path": "MANIFEST.in",
       "sha256": "0f5923d30d903957cdd2898bb55c6c123c1ed8b6f39bb712fb012a2efe3af617",
       "bytes": 470
-    },
-    {
-      "path": "REAUDIT_20261002.json",
-      "sha256": "b22bf8847d6fb8639464923c43c49748fa25022d613e81229a49af6b6afd2bb9",
-      "bytes": 939
     },
     {
       "path": "backend.py",
@@ -128,6 +118,11 @@
       "path": "构建配置.json"
     },
     {
+      "path": "项目文档/ATTRIBUTION_UPDATE_20261002.json",
+      "sha256": "37c27f6b2a028a7e171e982f3b78d81bbd8e4f726d2ff20c990c1d55208cd2b0",
+      "bytes": 537
+    },
+    {
       "path": "项目文档/COPYRIGHT.md",
       "sha256": "0989a74acaf06c56e82a734d27342f0bdf47258b708e88f57de464d95c094502",
       "bytes": 435
@@ -146,6 +141,11 @@
       "path": "项目文档/README.md",
       "sha256": "0d3bff4485711de194f2cf2d463471f7933e1ac877e386c2db1cc6e45d7bd1b0",
       "bytes": 3858
+    },
+    {
+      "path": "项目文档/REAUDIT_20261002.json",
+      "sha256": "b22bf8847d6fb8639464923c43c49748fa25022d613e81229a49af6b6afd2bb9",
+      "bytes": 939
     },
     {
       "path": "项目文档/VALIDATION.md",
